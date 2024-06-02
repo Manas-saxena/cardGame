@@ -1,0 +1,38 @@
+.game__wrapper{
+    min-width:100%;
+    min-height:100%;
+    overflow: scroll;
+    background-color: green;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.section{
+    padding:20px 0;
+}
+.upper__section{
+    height: 30%;
+}
+
+.draw__card{
+    background-color: grey;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.draw__card span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.lower__section{
+    display: grid;
+    grid-template-columns: repeat(5 , minmax(15vw,1fr));
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+}
